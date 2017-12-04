@@ -1,12 +1,12 @@
 cmake_minimum_required(VERSION 2.8.4)
 project(example-bot)
 
-set(TgBot_INCLUDE_DIR $ENV{TgBot_INCLUDE_DIR})
-set(TgBot_LIB $ENV{TgBot_LIB})
+set(TgBot_INCLUDE_DIR "/usr/local/include")
+set(TgBot_LIB "/usr/local/iib/libTgBot.a")
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -Wall")
 set(Boost_USE_MULTITHREADED ON)
-set(Boost_USE_STATIC_LIBS ON)
+#set(Boost_USE_STATIC_LIBS ON)
 
 find_package(Threads REQUIRED)
 find_package(OpenSSL REQUIRED)
